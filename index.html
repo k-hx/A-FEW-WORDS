@@ -26,17 +26,19 @@
 			width: 100%;
 		}
 
-		nav{
+		div#header-text{
+			margin: 3%;
 			display: flex;
-			justify-content: flex-end;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 		}
-
 
 		a#contribute{
 			text-decoration: none;
-			font-size: 15px;
+			font-size: 20px;
 			font-weight: bold;
-			padding: 0.5%;
+			padding: 8px;
 			margin: 15px;
 			border-radius: 15em;
 			font-family: 'Montserrat', sans-serif;
@@ -54,15 +56,16 @@
 
 		header{
 			color: white;
-			height: 200px;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+			height: 40vh;
 		}
 
 		h1,h2{
-			margin: 1%; 
+			margin: 0; 
+			text-align: center;
 		}
 
 		h1{
@@ -193,13 +196,13 @@
 		}
 
 		@media screen and (max-width: 600px){
-			
+
 			header{
-				height: 15%;
+				height: 30vh;
 			}
 
 			h1{
-				font-size: 2.6em;
+				font-size: 2.3em;
 			}
 
 			h2{
@@ -215,15 +218,21 @@
 			}
 		}
 
+		@media screen and (max-width: 405px){
+			h2{
+				font-size: .8em;
+			}
+		}
+
 	</style>
 </head>
-<body> 	
-	<nav>
-		<a href="Contribute a Poem 20200408 1243.html" id="contribute">CONTRIBUTE A POEM</a>
-	</nav>
+<body> 
 	<header>
-		<h1>A FEW WORDS</h1>
-		<h2>"A FEW WORDS CAN MAKE UP A POEM."</h2>
+		<div id="header-text">
+			<h1>A FEW WORDS</h1>
+			<h2>"A FEW WORDS CAN MAKE UP A POEM."</h2>
+			<a href="Contribute a Poem 20200408 1243.html" id="contribute">CONTRIBUTE A POEM</a>
+		</div>
 	</header>
 
 	<div id="content">
