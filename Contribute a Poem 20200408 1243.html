@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A Few Words</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+	<style type="text/css">
+		html{
+			width: 100%;
+			height: 100%;
+		}
+
+		body{
+			margin: 0;
+			font-family: 'Montserrat', sans-serif;
+	 		background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('Beach-birds-dawn.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-attachment: fixed;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			height: 100%;
+			width: 100%;
+		}
+
+		nav{
+			display: flex;
+			justify-content: flex-start;
+		}
+
+		/*button#contribute-button{
+			margin: 5%;
+			
+			border: none;
+			
+			padding: 1%;
+			
+			
+			padding: 5%;
+			width: max-content;
+		}*/
+
+		a#home{
+			text-decoration: none;
+			font-size: 10%;
+			font-weight: bold;
+			padding: 0.5%;
+			margin: 1%;
+			border-radius: 15em;
+			font-family: 'Montserrat', sans-serif;
+			color: #fefffd;
+			background-color: #a69b81;
+			text-align: center;
+			border: 3px solid #a69b81;
+		}
+
+		a#home:hover{
+			background-color: #fefffd;
+			color: #a69b81;
+		}
+
+		header{
+			color: white;
+			height: 110px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		h1,h2{
+			margin: 0 auto; 
+		}
+
+		h1{
+			font-size: 1em;
+			color: white;
+		}
+
+		h2{
+			font-size: 1em;
+			font-weight: normal;
+		}
+
+		h2#title{
+			background-color: rgba(110, 100, 81,.7); 
+			font-size: 180%;
+			margin: 0.5% auto; 
+			padding: 0.5%;
+			color: white;
+			width: max-content;
+			/*border-radius: .5em;*/
+		}
+
+		div#content{
+			/*width: 80%;*/
+			margin: 0% auto;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+		}
+
+		form{
+			margin: auto;
+			width: 50%;
+			padding: 1%;
+			background-color: rgba(255,255,255,.9);
+			background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url('Background-2.jpg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			border: 3px solid rgb(153, 141, 115);
+			border-radius: .5em;
+			
+		}
+
+		input.input-field{
+			border-radius: 1.3em;
+			border: 2px solid rgba(153, 141, 115,.6);
+			padding: 2%;
+			width: 60%;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 1em;
+			vertical-align: middle;
+			outline: none;
+			background-color: white;
+			color: #635b4a;
+		}
+
+		div.item{
+			display: flex;
+			justify-content: center;
+			align-items: baseline;
+			margin: 2% auto;
+		}
+
+
+		.item-name{
+			display: inline-block;			
+			text-align: left;
+			width: 20%;
+			color: #635b4a;
+			font-size: 1.5em;
+			color: white;
+		}
+
+		/*placeholder #d9d1c1*/
+
+		textarea#poem{
+			border-radius: 1.3em;
+			border: 2px solid rgba(153, 141, 115,.6);
+			padding: 2%;
+			width: 60%;
+			height: 200px;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 1em;
+			vertical-align: middle;
+			outline: none;
+			background-color: white;
+			color: #635b4a;
+		}
+
+		button#submit-button{
+			width: 10%;
+			margin: 2% auto;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 1em;
+			font-weight: bold;
+			padding: 0.5%;
+			border-radius: 15em;
+			color: #fefffd;
+			background-color: #a69b81;
+			text-align: center;
+			border: 3px solid #a69b81;
+			outline: none;
+		}
+
+		button#submit-button:hover{
+			background-color: #fefffd;
+			color: #a69b81;
+			cursor: pointer;
+		}
+
+	</style>
+</head>
+<body>
+	<nav>
+		<a href="Project 20200408 1056.html" id="home">BACK TO HOME</a>
+	</nav>
+
+	<header>
+		<h1>A FEW WORDS</h1>
+		<h2 id="title">Share us your poem</h2>
+	</header>
+	
+	<div id="content">
+		<form>
+			<div class="item">
+				<label for="name" class="item-name">Name:</label>
+				<input type="text" name="name" class="input-field" placeholder="Your name / pen name" required>
+			</div>	
+			
+			<div class="item">
+				<label for="poem" class="item-name">Your poem:</label>
+				<textarea id="poem" placeholder="Type your poem here..." required></textarea>
+			</div>
+		</form>
+
+		<button type="submit" id="submit-button">SUBMIT</button>
+	</div>
+
+</body>
+</html>
