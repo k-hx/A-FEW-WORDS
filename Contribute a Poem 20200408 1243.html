@@ -3,6 +3,9 @@
 <head>
 	<title>A Few Words</title>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+	<meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 	<style type="text/css">
 		html{
 			width: 100%;
@@ -43,10 +46,10 @@
 
 		a#home{
 			text-decoration: none;
-			font-size: 10%;
+			font-size: 16px;
 			font-weight: bold;
-			padding: 0.5%;
-			margin: 1%;
+			padding:8px;
+			margin: 10px;
 			border-radius: 15em;
 			font-family: 'Montserrat', sans-serif;
 			color: #fefffd;
@@ -94,7 +97,6 @@
 		}
 
 		div#content{
-			/*width: 80%;*/
 			margin: 0% auto;
 			display: flex;
 			justify-content: center;
@@ -103,7 +105,7 @@
 
 		form{
 			margin: auto;
-			width: 50%;
+			width: 65%;
 			padding: 1%;
 			background-color: rgba(255,255,255,.9);
 			background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url('Background-2.jpg');
@@ -162,7 +164,7 @@
 		}
 
 		button#submit-button{
-			width: 10%;
+			width: max-content;
 			margin: 2% auto;
 			font-family: 'Montserrat', sans-serif;
 			font-size: 1em;
@@ -182,11 +184,76 @@
 			cursor: pointer;
 		}
 
+		footer{
+			margin-top: 20px;
+			height: 150px;
+			display: flex;
+			flex-direction: column;
+			background-color: rgba(166,155,129,0.6);
+			color: white;
+			justify-content: center;
+		}
+
+		div#footer-texts{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin: 1%;
+		}
+
+		div#footer-texts h3{
+			margin: 0;
+			padding: 0.4%;
+			font-size: 1em;
+		}
+
+		a#Pexels{
+			color: white;
+			text-decoration: none;
+		}
+
+		a#Pexels:hover{
+			color: rgb(166,155,129);
+		}
+
+		@media screen and (max-width: 900px){
+			a#home{
+				font-size: 10px;
+			}
+		}
+
+		@media screen and (max-width: 730px){
+			form{
+				width: 90%;
+			}
+		}
+
+		@media screen and (max-width: 540px){
+			form{
+				margin: 0% auto 3%;
+			}
+
+			div.item{
+				flex-direction: column;
+				margin: 2%;
+			}
+
+			label.item-name{
+				width: max-content;
+			}
+
+			input.input-field,
+			textarea#poem{
+				width: 95%;
+			}
+		}
+
 	</style>
 </head>
 <body>
 	<nav>
-		<a href="Project 20200408 1056.html" id="home">BACK TO HOME</a>
+		<a href="Project 20200408 1921.html" id="home">BACK TO HOME</a>
 	</nav>
 
 	<header>
@@ -209,6 +276,13 @@
 
 		<button type="submit" id="submit-button">SUBMIT</button>
 	</div>
+
+	<footer>
+		<div id="footer-texts">
+			<h3>WEB PAGE BY DORASHIA</h3>
+			<h3>PHOTOS FROM <a href="https://www.pexels.com/royalty-free-images" target="_blank" id="Pexels">PEXELS</a></h3>
+		</div>
+	</footer>
 
 </body>
 </html>
