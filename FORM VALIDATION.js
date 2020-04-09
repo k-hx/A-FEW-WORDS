@@ -9,7 +9,7 @@ function validateForm() {
 	}
 
 	if(poemTitle.length > 45) {
-		alert("Poem title cannot be longer than 45 characters. Thank you.");
+		alert("Title of the poem cannot be longer than 45 characters. Thank you.");
 		return false;
 	}
 
