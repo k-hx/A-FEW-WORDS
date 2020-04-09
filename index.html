@@ -4,7 +4,7 @@
 	<title>A Few Words</title>
 	<meta http-equiv="content-type" content="text/html" charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Quicksand:wght@600&display=swap" rel="stylesheet">
 	<style type="text/css">
 		html{
 			width: 100%;
@@ -60,7 +60,7 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			height: 40vh;
+			height: 300px;
 		}
 
 		h1,h2{
@@ -70,6 +70,11 @@
 
 		h1{
 			font-size: 3em;
+		}
+
+		h1 a{
+			text-decoration: none;
+			color: white;
 		}
 
 		h2{
@@ -96,6 +101,11 @@
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
+			/*font-family: 'Quicksand', sans-serif;*/
+		}
+
+		div.short-poem:hover{
+			cursor: pointer;
 		}
 
 		div.short-poem:hover{
@@ -198,7 +208,7 @@
 		@media screen and (max-width: 600px){
 
 			header{
-				height: 30vh;
+				height: 200px;
 			}
 
 			h1{
@@ -224,14 +234,30 @@
 			}
 		}
 
+		@media screen and (max-width: 348px){
+			h1{
+				font-size: 2em;
+			}
+
+			a#contribute{
+				font-size: 15px;
+			}
+		}
+
+		@media screen and (max-width: 323px){
+			h2{
+				font-size: .5em;
+			}
+		}
+
 	</style>
 </head>
 <body> 
 	<header>
 		<div id="header-text">
-			<h1>A FEW WORDS</h1>
+			<h1><a href="Project 20200408 1921.html">A FEW WORDS</a></h1>
 			<h2>"A FEW WORDS CAN MAKE UP A POEM."</h2>
-			<a href="Contribute a Poem 20200408 1243.html" id="contribute">CONTRIBUTE A POEM</a>
+			<a href="Contribute a Poem 20200409 1203.html" id="contribute">CONTRIBUTE A POEM</a>
 		</div>
 	</header>
 
