@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>A Few Words</title>
+	<title>Contribute a Poem | A Few Words</title>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 	<meta http-equiv="content-type" content="text/html" charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -77,8 +77,17 @@
 		}
 
 		h1{
-			font-size: 1em;
+			font-size: 20px;
 			color: white;
+		}
+
+		h1 a{
+			color: white;
+			text-decoration: none;
+		}
+
+		h1 a:hover{
+			color: rgb(166,155,129);
 		}
 
 		h2{
@@ -103,7 +112,7 @@
 			flex-direction: column;
 		}
 
-		form{
+		div#form-background{
 			margin: auto;
 			width: 65%;
 			padding: 1%;
@@ -120,7 +129,7 @@
 		input.input-field{
 			border-radius: 1.3em;
 			border: 2px solid rgba(153, 141, 115,.6);
-			padding: 2%;
+			padding: 10px;
 			width: 60%;
 			font-family: 'Montserrat', sans-serif;
 			font-size: 1em;
@@ -128,6 +137,7 @@
 			outline: none;
 			background-color: white;
 			color: #635b4a;
+			font-size: 20px;
 		}
 
 		div.item{
@@ -147,8 +157,6 @@
 			color: white;
 		}
 
-		/*placeholder #d9d1c1*/
-
 		textarea#poem{
 			border-radius: 1.3em;
 			border: 2px solid rgba(153, 141, 115,.6);
@@ -156,20 +164,23 @@
 			width: 60%;
 			height: 200px;
 			font-family: 'Montserrat', sans-serif;
-			font-size: 20px;
+			font-size: 1em;
 			vertical-align: middle;
 			outline: none;
 			background-color: white;
 			color: #635b4a;
+			font-size: 20px;
+			resize: none;
 		}
 
-		button#submit-button{
+		input#submit-button{
+			display: block;
 			width: max-content;
 			margin: 2% auto;
 			font-family: 'Montserrat', sans-serif;
-			font-size: 1em;
+			font-size: 20px;
 			font-weight: bold;
-			padding: 0.5%;
+			padding: 5px 10px;
 			border-radius: 15em;
 			color: #fefffd;
 			background-color: #a69b81;
@@ -178,7 +189,7 @@
 			outline: none;
 		}
 
-		button#submit-button:hover{
+		input#submit-button:hover{
 			background-color: #fefffd;
 			color: #a69b81;
 			cursor: pointer;
@@ -217,6 +228,11 @@
 			color: rgb(166,155,129);
 		}
 
+		::placeholder {
+			color: #b9ad97;
+			opacity: 1;
+			}
+
 		@media screen and (max-width: 900px){
 			a#home{
 				font-size: 10px;
@@ -224,13 +240,13 @@
 		}
 
 		@media screen and (max-width: 730px){
-			form{
+			div#form-background{
 				width: 90%;
 			}
 		}
 
 		@media screen and (max-width: 540px){
-			form{
+			div#form-background{
 				margin: 0% auto 3%;
 			}
 
@@ -247,7 +263,7 @@
 			textarea#poem{
 				width: 95%;
 			}
-			
+
 			a#home{
 				display: none;
 			}
@@ -255,31 +271,41 @@
 
 	</style>
 </head>
+
+<script type="text/javascript" src="FORM VALIDATION.js"></script>
+
 <body>
 	<nav>
 		<a href="Project 20200408 1921.html" id="home">BACK TO HOME</a>
 	</nav>
 
 	<header>
-		<h1>A FEW WORDS</h1>
+		<h1><a href="Project 20200408 1921">A FEW WORDS</a></h1>
 		<h2 id="title">Share us your poem</h2>
 	</header>
-	
-	<div id="content">
-		<form>
-			<div class="item">
-				<label for="name" class="item-name">Name:</label>
-				<input type="text" name="name" class="input-field" placeholder="Your name / pen name" required>
-			</div>	
-			
-			<div class="item">
-				<label for="poem" class="item-name">Your poem:</label>
-				<textarea id="poem" placeholder="Type your poem here..." required></textarea>
-			</div>
-		</form>
 
-		<button type="submit" id="submit-button">SUBMIT</button>
-	</div>
+	<div id="content">	
+		<form name="contributePoem" action="" onSubmit="return validateForm()" method="post">
+			<div id="form-background">	
+				<div class="item">
+					<label for="poetName" class="item-name">Name:</label>
+					<input type="text" name="poetName" class="input-field" placeholder="Your name / pen name">
+				</div>
+
+				<div class="item">
+					<label for="poemTitle" class="item-name">Title:</label>
+					<input type="text" name="poemTitle" class="input-field" placeholder="Title of your poem">
+				</div>
+
+				<div class="item">
+					<label for="poem" class="item-name">Poem</label>
+					<textarea id="poem" placeholder="Type your poem here... "name="poem"></textarea>
+				</div>
+			</div>
+
+			<input type="submit" value="SUBMIT" id="submit-button" required>
+		</form>
+	</div>	
 
 	<footer>
 		<div id="footer-texts">
