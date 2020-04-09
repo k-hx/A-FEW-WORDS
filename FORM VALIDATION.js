@@ -14,7 +14,7 @@ function validateForm() {
 	}
 
 	if (poem == "") {
-		alert("Emm...Seemed like you haven't type in your poem.");
+		alert("Hmm... it seems that you haven't enter your poem yet.");
 		return false;
 	}
 }
