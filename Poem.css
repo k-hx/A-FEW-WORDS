@@ -176,7 +176,7 @@ a#Pexels:hover{
 
 div#button {
     display: flex;
-    width: 50%;
+    width: 100%;
     margin: auto;
     justify-content: center;
 }
