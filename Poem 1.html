@@ -7,10 +7,36 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/202612f1bf.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="Icon.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="Icon.png">
 	<style type="text/css">
 		body{
 			background-image: linear-gradient(rgba(255, 242, 242, 0.377),rgba(0, 0, 0, 0.199)),url('aerial-view-of-beach-4033578.jpg');
+        }
+
+        div#button {
+            display: flex;
+            width: 50%;
+            margin: auto;
+            justify-content: center;
+        }
+
+        a#previous,
+        a#next {
+            display: block;
+            background-color: rgba(245, 239, 171, 0.7);
+            text-decoration: none;
+            color: rgb(66, 64, 43);
+            font-family: 'Montserrat', sans-serif;
+            border-radius: 100%;
+            padding: 12px 18px;
+            border: 3px solid rgb(245, 239, 171, 0.7);
+            font-size: 18px;
+            font-weight: 900;
+            margin: 0 15px;
         }
     </style>
     <link rel="stylesheet" href="Poem.css">
@@ -48,8 +74,10 @@
         </div>
 		
 		<div id="button">
+            <a href="Poem 6.html" id="previous"><i class="fas fa-arrow-left"></i></a>
 			<button type="button" onclick="displayChineseVersion()" id="displayChineseVersion">CHINESE VERSION</button>
-			<button type="button" onclick="displayEnglishVersion()" id="displayEnglishVersion">ENGLISH VERSION</button>
+            <button type="button" onclick="displayEnglishVersion()" id="displayEnglishVersion">ENGLISH VERSION</button>
+            <a href="Poem 2.html" id="next"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
 		</div>
         
 	</div>
