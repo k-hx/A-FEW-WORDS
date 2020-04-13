@@ -261,4 +261,8 @@ p#comment {
     p#comment {
         margin: 0 5px 0;
     }
+    
+    ::placeholder {
+        font-size: 10px;
+    }
 }
