@@ -124,7 +124,7 @@ div#poemCh p {
 button#displayChineseVersion,
 button#displayEnglishVersion {
     background-color:rgba(245, 239, 171, 0.7);
-    border: 3px solid rgb(245, 239, 171, 0.7);
+    border: 3px solid rgb(241, 235, 165);;
     border-radius: 5em;
     font-family: 'Montserrat', sans-serif;
     color: rgb(66, 64, 43);
@@ -190,7 +190,7 @@ a#next {
     font-family: 'Montserrat', sans-serif;
     border-radius: 100%;
     padding: 12px 18px;
-    border: 3px solid rgb(245, 239, 171, 0.7);
+    border: 3px solid rgb(241, 235, 165);
     font-size: 18px;
     font-weight: 900;
     margin: 0 15px;
