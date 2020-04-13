@@ -109,6 +109,8 @@ div.short-poem:hover{
 div.short-poem p{
     padding: 5%;
     line-height: 150%;
+    width: 100%;
+    text-align: center;
 }
 
 div#poem-one:hover{
