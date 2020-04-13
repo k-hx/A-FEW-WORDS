@@ -203,6 +203,7 @@ a#next:hover {
     background-color: rgba(245, 239, 171, 0.9);
 }
 
+.fa-arrow-left:before,
 .fa-arrow-right:before {
     vertical-align: middle;
 }
