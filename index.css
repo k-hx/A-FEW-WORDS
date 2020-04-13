@@ -1,0 +1,243 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('Beach-birds-dawn.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+div#header-text{
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a#contribute{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px;
+    margin: 15px;
+    border-radius: 15em;
+    font-family: 'Montserrat', sans-serif;
+    color: #fefffd;
+    background-color: #a69b81;
+    text-align: center;
+    border: 3px solid #a69b81;
+    width: fit-content;
+}
+
+a#contribute:hover{
+    background-color: #fefffd;
+    color: #a69b81;
+}
+
+header{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+h1,h2{
+    margin: 0; 
+    text-align: center;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+h2{
+    font-size: 1em;
+    font-weight: normal;
+}
+
+div#content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+div.short-poem{
+    height: 300px;
+    width: 325px;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #cabea3;
+    margin: 2%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*font-family: 'Quicksand', sans-serif;*/
+}
+
+div.short-poem:hover{
+    cursor: pointer;
+}
+
+div.short-poem:hover{
+    border: 5px solid #fff5ce;
+    background-image: none;
+    background-color: white;
+}
+
+div.short-poem p{
+    padding: 5%;
+    line-height: 150%;
+}
+
+div#poem-one:hover{
+    background-image: none;
+    background-color: rgba(255,255,255,0.8);
+}
+
+div#poem-two:hover{
+    background-image: none;
+    background-color: rgba(255,255,255,0.8);
+}
+
+div#poem-three:hover{
+    background-image: none;
+    background-color: rgba(255,255,255,0.8);
+}
+
+div#poem-four:hover{
+    background-image: none;
+    background-color: rgba(255,255,255,0.8);
+}
+
+div#poem-five:hover{
+    background-image: none;
+    background-color: rgba(255,255,255,0.8);
+}
+
+div#poem-six:hover{
+    background-image: none;
+    background-color: rgba(255,255,255,0.8);
+}
+
+div#poem-one{
+    background-image: linear-gradient(rgba(255, 255, 255, 255.3),rgba(255, 255, 255, 0.3)),url('Mountain-and-sea.jpg');
+}
+
+div#poem-two{
+    background-image: linear-gradient(rgba(255, 255, 255, 255.3),rgba(255, 255, 255, 0.3)),url('Lake.jpg');
+}
+
+div#poem-three{
+    background-image: linear-gradient(rgba(255, 255, 255, 255.3),rgba(255, 255, 255, 0.3)),url('CN-Tower.jpg');
+}
+
+div#poem-four{
+    background-image: linear-gradient(rgba(255, 255, 255, 255.3),rgba(255, 255, 255, 0.3)),url('KLCC.jpg');
+}
+
+div#poem-five{
+    background-image: linear-gradient(rgba(255, 255, 255, 255.3),rgba(255, 255, 255, 0.3)),url('Northern-lights.jpg');
+}
+
+div#poem-six{
+    background-image: linear-gradient(rgba(255, 255, 255, 255.3),rgba(255, 255, 255, 0.3)),url('Corn-fields.jpg');
+}
+
+footer{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(166,155,129,0.6);
+    color: white;
+    justify-content: center;
+}
+
+div#footer-texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+}
+
+div#footer-texts h3{
+    margin: 0;
+    padding: 0.4%;
+    font-size: 1em;
+}
+
+a#Pexels{
+    color: white;
+    text-decoration: none;
+}
+
+a#Pexels:hover{
+    color: rgb(166,155,129);
+}
+
+@media screen and (max-width: 600px){
+
+    header{
+        height: 200px;
+    }
+
+    h1{
+        font-size: 2.3em;
+    }
+
+    h2{
+        font-size: 1em;
+    }
+
+    div#content{
+        margin: 0% 5% 5%;
+    }
+
+    div.short-poem{
+        margin: 5% 0%;
+    }
+}
+
+@media screen and (max-width: 405px){
+    h2{
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 348px){
+    h1{
+        font-size: 2em;
+    }
+
+    a#contribute{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 323px){
+    h2{
+        font-size: .5em;
+    }
+}

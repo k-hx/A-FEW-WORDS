@@ -1,0 +1,264 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('Beach-birds-dawn.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-start;
+}
+
+a#home{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding:8px;
+    margin: 10px;
+    border-radius: 15em;
+    font-family: 'Montserrat', sans-serif;
+    color: #fefffd;
+    background-color: #a69b81;
+    text-align: center;
+    border: 3px solid #a69b81;
+}
+
+a#home:hover{
+    background-color: #fefffd;
+    color: #a69b81;
+}
+
+header{
+    color: white;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,h2{
+    margin: 0 auto; 
+}
+
+h1{
+    font-size: 20px;
+    color: white;
+}
+
+h1 a{
+    color: white;
+    text-decoration: none;
+}
+
+h1 a:hover{
+    color: rgb(166,155,129);
+}
+
+h2{
+    font-size: 1em;
+    font-weight: normal;
+}
+
+h2#title{
+    background-color: rgba(110, 100, 81,.7); 
+    font-size: 180%;
+    margin: 0.5% auto; 
+    padding: 0.5%;
+    color: white;
+    width: max-content;
+    /*border-radius: .5em;*/
+}
+
+div#content{
+    margin: 0% auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div#form-background{
+    margin: auto;
+    width: 65%;
+    padding: 1%;
+    background-color: rgba(255,255,255,.9);
+    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url('Background-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px solid rgb(153, 141, 115);
+    border-radius: .5em;
+    
+}
+
+input.input-field{
+    border-radius: 1.3em;
+    border: 2px solid rgba(153, 141, 115,.6);
+    padding: 10px;
+    width: 60%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    vertical-align: middle;
+    outline: none;
+    background-color: white;
+    color: #635b4a;
+    font-size: 20px;
+}
+
+div.item{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 2% auto;
+}
+
+
+.item-name{
+    display: inline-block;			
+    text-align: left;
+    width: 20%;
+    color: #635b4a;
+    font-size: 1.5em;
+    color: white;
+}
+
+textarea#poem{
+    border-radius: 1.3em;
+    border: 2px solid rgba(153, 141, 115,.6);
+    padding: 2%;
+    width: 60%;
+    height: 200px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    vertical-align: middle;
+    outline: none;
+    background-color: white;
+    color: #635b4a;
+    font-size: 20px;
+    resize: none;
+}
+
+input#submit-button{
+    display: block;
+    width: max-content;
+    margin: 2% auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 15em;
+    color: #fefffd;
+    background-color: #a69b81;
+    text-align: center;
+    border: 3px solid #a69b81;
+    outline: none;
+}
+
+input#submit-button:hover{
+    background-color: #fefffd;
+    color: #a69b81;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 20px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(166,155,129,0.6);
+    color: white;
+    justify-content: center;
+}
+
+div#footer-texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+}
+
+div#footer-texts h3{
+    margin: 0;
+    padding: 0.4%;
+    font-size: 1em;
+}
+
+a#Pexels{
+    color: white;
+    text-decoration: none;
+}
+
+a#Pexels:hover{
+    color: rgb(166,155,129);
+}
+
+::placeholder {
+    color: #b9ad97;
+    opacity: 1;
+}
+
+div#email-item {
+    margin-bottom: 0;
+}
+
+p#comment {
+    margin-top: 5px;
+    margin-left: 30%;
+    font-size: 10px;
+    color: white;
+}
+
+@media screen and (max-width: 900px){
+    a#home{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 730px){
+    div#form-background{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 540px){
+    div#form-background{
+        margin: 0% auto 3%;
+    }
+
+    div.item{
+        flex-direction: column;
+        margin: 2%;
+    }
+
+    label.item-name{
+        width: max-content;
+    }
+
+    input.input-field,
+    textarea#poem{
+        width: 95%;
+    }
+
+    a#home{
+        display: none;
+    }
+
+    p#comment {
+        margin: 0 5px 0;
+    }
+}
