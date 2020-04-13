@@ -196,6 +196,13 @@ a#next {
     margin: 0 15px;
 }
 
+button#displayChineseVersion:hover,
+button#displayEnglishVersion:hover,
+a#previous:hover,
+a#next:hover {
+    background-color: rgba(245, 239, 171, 0.9);
+}
+
 .fa-arrow-right:before {
     vertical-align: middle;
 }
